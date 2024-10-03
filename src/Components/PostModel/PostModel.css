@@ -1,0 +1,53 @@
+.postModelContainer {
+  color: var(--font-color-post);
+  position: relative;
+}
+
+.postModelContainer .coverPhoto,
+.title {
+  height: 204px;
+}
+
+.postModelContainer .coverPhoto {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.postModelContainer .title {
+  font-family: var(--secondary-font);
+  padding: 0 7.5rem;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.postModelContainer .postContentContainer {
+  padding: 2.5rem 7.5rem 4.5rem;
+}
+
+@media (max-width: 744px) {
+  .postModelContainer .postContentContainer {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 744px) {
+  .postModelContainer .coverPhoto,
+  .title {
+    height: 104px;
+  }
+
+  .postModelContainer .title {
+    padding: 0 1rem;
+    font-size: 2rem;
+  }
+
+  .postModelContainer .postContentContainer {
+    padding: 2rem 1rem 1.5rem;
+  }
+}

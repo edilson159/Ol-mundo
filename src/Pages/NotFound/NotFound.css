@@ -1,0 +1,80 @@
+.contentContainer {
+    position: relative;
+    text-align: center;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 0 1.5rem 6.5rem;
+}
+
+.contentContainer .text404 {
+    display: block;
+    color: var(--medium-blue);
+    font-family: var(--secondary-font);
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.contentContainer .title {
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contentContainer .paragraph {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+.contentContainer .buttonContainer {
+    text-align: start;
+    margin-top: 3.5rem;
+    margin-left: 30vw;
+}
+
+.contentContainer .dogImage {
+    position: absolute;
+    height: 25vw;
+    bottom: calc(-25vw * 0.5);
+}
+
+.emptySpace {
+    height: 40vh;
+}
+
+@media (max-width: 1100px) {    
+    .contentContainer .text404 {
+        margin-bottom: 2.25rem;
+    }
+
+    .contentContainer .buttonContainer {
+        margin-top: 2.75rem;
+        margin-left: 15vw;
+    }
+
+    .contentContainer .dogImage {
+        height: 50vw;
+        bottom: calc(-50vw * 0.65);
+        left: 40vw;
+    }
+
+     .emptySpace {
+        height: 53vw;
+    }
+}
+
+@media (max-width: 744px) {
+    .contentContainer {
+        padding: 3rem 1rem 17rem;
+    }
+
+    .contentContainer .text404 {
+        font-size: 4rem;
+    }
+
+    .contentContainer .title {
+        font-size: 2.25rem;
+        line-height: 3rem;
+    }
+
+    .contentContainer .paragraph {
